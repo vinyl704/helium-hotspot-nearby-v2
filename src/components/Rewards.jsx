@@ -21,5 +21,3 @@ export default function Rewards({address,timeFrame,clicked}){
         
     
 }
-
-//https://api.helium.io/v1/hotspots/11hW5GTuo64wXDrXxJqRwmYuABfqu8JL7MPPLXeLo98qgzF1BMC/rewards/sum?min_time=-1%20day

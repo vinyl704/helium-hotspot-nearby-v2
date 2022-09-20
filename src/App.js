@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React, { useState, useEffect, useLayoutEffect } from "react";
 import Miner from "./components/Miner";
@@ -39,8 +38,7 @@ function App() {
         .catch(console.log);
     }
   }, [lat, long, dist]);
-    console.log(unit)
-  //console.log(data);
+
   return (
     <div className="App">
       <Header data={data} distance={dist} />

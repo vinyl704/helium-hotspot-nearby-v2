@@ -5,8 +5,6 @@ export default function Miner(props){
     
     const {distance,
         status,
-        //payer,
-        //owner,
         name,
         geocode,
         address,
@@ -38,46 +36,3 @@ export default function Miner(props){
         </div>
     )
 }
-
-/*
-
-{
-    "lng": -81.11039573529595,
-    "lat": 35.354320652801285,
-    "distance": 1423.61193408,
-    "timestamp_added": "2022-01-24T16:50:47.000000Z",
-    "status": {
-        "timestamp": null,
-        "online": "offline",
-        "listen_addrs": null,
-        "height": null
-    },
-    "reward_scale": null,
-    "payer": "13MS2kZHU4h6wp3tExgoHdDFjBsb9HB9JBvcbK9XmfNyJ7jqzVv",
-    "owner": "14e2f8JgraJqZrRcjJFYbVx3tpwdYrWSFTXeur2LhFK7pBgUHKu",
-    "nonce": 1,
-    "name": "silly-daisy-dove",
-    "mode": "full",
-    "location_hex": "8844d8630dfffff",
-    "location": "8c44d8630c255ff",
-    "last_poc_challenge": null,
-    "last_change_block": 1196473,
-    "geocode": {
-        "short_street": "Dogwood Ln",
-        "short_state": "NC",
-        "short_country": "US",
-        "short_city": "Stanley",
-        "long_street": "Dogwood Lane",
-        "long_state": "North Carolina",
-        "long_country": "United States",
-        "long_city": "Stanley",
-        "city_id": "c3RhbmxleW5vcnRoIGNhcm9saW5hdW5pdGVkIHN0YXRlcw"
-    },
-    "gain": 12,
-    "elevation": 0,
-    "block_added": 1196459,
-    "block": 1506896,
-    "address": "11hW5GTuo64wXDrXxJqRwmYuABfqu8JL7MPPLXeLo98qgzF1BMC"
-}
-
-*/
