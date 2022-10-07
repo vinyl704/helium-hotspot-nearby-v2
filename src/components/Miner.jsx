@@ -1,5 +1,4 @@
 import React,{ useState } from "react";
-import { useEffect } from "react";
 import Rewards from "./Rewards";
 import TimeFrame from "./TimeFrame";
 
@@ -19,23 +18,27 @@ export default function Miner(props){
         const [clicked,setClicked] = useState(false);
         const [rewards,setRewards] = useState(0);
         
-        const handleClick =(e)=>{
-            e.preventDefault()
-            e.stopPropagation()
-            setClicked(true)
-        }
-
-        useEffect(()=>{
-            if(clicked){
-
-                fetch(`https://api.helium.io/v1/hotspots/${address}/rewards/sum?min_time=-${timeFrame}%20day`)
+        const fetchData =()=>{
+            fetch(`https://api.helium.io/v1/hotspots/${address}/rewards/sum?min_time=-${timeFrame}%20day`,{mode:"cors"})
                 .then(res=>res.json())
                 .then(data=>data.data)
                 .then(reward=>reward.total)
                 .then(setRewards)
                 .catch(console.log)
-            }
-        },[timeFrame])
+        }
+
+        const handleClick =(e)=>{
+            e.preventDefault()
+            e.stopPropagation()
+            if(!clicked) setClicked(true)
+          
+            fetchData() 
+            
+        }
+
+ 
+
+        
         
     return (
     
@@ -48,7 +51,7 @@ export default function Miner(props){
             <p className="card-item">{geocode.short_city}, {geocode.short_state}</p>
             <div className="card-item mb-2"><Rewards {...props} rewards={rewards} timeFrame={timeFrame} clicked={clicked}/></div>
             <p className={status.online==="offline"?"card-item bg-danger rounded p-1":"card-item rounded p-1 bg-success"}>{status.online}</p>
-            <TimeFrame setTime={setTimeFrame} timeFrame={timeFrame} />
+            <TimeFrame setTimeFrame={setTimeFrame} timeFrame={timeFrame} />
 
             </div>
         </div>

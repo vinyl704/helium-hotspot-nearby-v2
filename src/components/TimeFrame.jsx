@@ -1,8 +1,10 @@
 
-export default function TimeFrame({setTime,timeFrame}){
+export default function TimeFrame({setTimeFrame,timeFrame}){
     const handleChange=(e)=>{
         e.preventDefault()
-        setTime(e.target.value)
+        e.stopPropagation()
+
+        setTimeFrame(e.target.value)
     }
     return(
         <select className="form-control-lg" onChange={handleChange} value={timeFrame}>
