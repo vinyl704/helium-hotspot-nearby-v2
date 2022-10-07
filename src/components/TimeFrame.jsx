@@ -2,7 +2,6 @@
 export default function TimeFrame({setTime,timeFrame}){
     const handleChange=(e)=>{
         e.preventDefault()
-        e.stopPropagation()
         setTime(e.target.value)
     }
     return(

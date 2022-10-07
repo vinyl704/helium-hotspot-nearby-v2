@@ -1,19 +1,11 @@
+import { wait } from "@testing-library/user-event/dist/utils";
 import React,{useState,useEffect} from "react";
 
-export default function Rewards({address,timeFrame,clicked}){
-    const [rewards,setRewards] = useState('');
+export default function Rewards({address,timeFrame,clicked,rewards}){
+  
     
 
-    
-    if(clicked === true){
-        fetch(`https://api.helium.io/v1/hotspots/${address}/rewards/sum?min_time=-${timeFrame}%20day`,{mode:'cors'})
-        .then(res=>res.json())
-        .then(data=>data.data)
-        .then(reward=>reward.total)
-        .then(setRewards)
-    }
-        
-    
+
 
     return clicked
             ?(<div className="bg-info p-2 rounded"><span>{rewards}</span> HNT in {timeFrame} {timeFrame>1?'days':'day'}</div>)

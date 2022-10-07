@@ -1,7 +1,7 @@
 # helium-hotspot-nearby
 
 ### What is this?
-This app shows you how many Helium hotspot miners are close to (or far from) you.
+This app shows you how many Helium hotspot miners are close to (or far from) your current location.
 
 The way it works is: 
 1. You grant the site permission to use your GPS location.

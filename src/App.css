@@ -28,8 +28,8 @@
 }
 h1{
   font-family: 'Righteous', cursive;
-  font-size: 4rem;
-  
+  font-size: 3.7rem;
+  max-width: 99%;
   letter-spacing: 3px;
 }
 .App-header {
@@ -54,4 +54,12 @@ h1{
   to {
     transform: rotate(360deg);
   }
+}
+
+#miner-container{
+  max-width:95%;
+  background-color: rgb(255,255,255);
+  border-width: 1px;
+  border-color: rgb(255,255,255);
+  backdrop-filter: blur(10px);
 }
