@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/helium-hotspot-nearby-v2/static/css/main.738dcc6f.css",
+    "main.js": "/helium-hotspot-nearby-v2/static/js/main.3858b762.js",
+    "static/js/787.21ee3b2f.chunk.js": "/helium-hotspot-nearby-v2/static/js/787.21ee3b2f.chunk.js",
+    "index.html": "/helium-hotspot-nearby-v2/index.html",
+    "main.738dcc6f.css.map": "/helium-hotspot-nearby-v2/static/css/main.738dcc6f.css.map",
+    "main.3858b762.js.map": "/helium-hotspot-nearby-v2/static/js/main.3858b762.js.map",
+    "787.21ee3b2f.chunk.js.map": "/helium-hotspot-nearby-v2/static/js/787.21ee3b2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.738dcc6f.css",
+    "static/js/main.3858b762.js"
+  ]
+}
