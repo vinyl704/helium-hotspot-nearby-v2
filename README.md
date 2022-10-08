@@ -12,4 +12,4 @@ The way it works is:
 This was made so I didn't have to use the helium explorer to see how many helium hotspots are close to me. 
 That just seemed like to much work for that piece of information.
 
-[Live Demo](https://vinyl704.github.io/###)
+[Live Demo](https://vinyl704.github.io/helium-hotspot-nearby-v2)
