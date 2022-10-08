@@ -32,7 +32,7 @@ export default function Miner(props){
                         
                     }
 
-                    fetchData()
+                    if(clicked) fetchData()
         },[timeFrame,clicked])
        
 
