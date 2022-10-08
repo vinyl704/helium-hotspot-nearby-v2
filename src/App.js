@@ -55,7 +55,10 @@ function App() {
         <strong>{isMeters ? dist : metersToMile(dist).toFixed(2)}</strong>{" "}
         {unit} of your location.
       </p>
-      <div className="mt-5 w-80 d-flex flex-md-row flex-lg-row flex-xl-row flex-wrap mx-auto flex-column justify-content-evenly align-items-center overflow-hidden rounded" id="miner-container">
+      <div
+        className="mt-5 w-80 d-flex flex-md-row flex-lg-row flex-xl-row flex-wrap mx-auto flex-column justify-content-evenly align-items-center overflow-hidden rounded"
+        id="miner-container"
+      >
         {data &&
           data.map((miner, idx) => (
             <Miner

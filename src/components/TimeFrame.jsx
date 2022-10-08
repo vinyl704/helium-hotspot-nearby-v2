@@ -1,7 +1,4 @@
-import { useEffect } from "react";
-
 export default function TimeFrame({ handleChange }) {
-
   return (
     <select className="form-control-lg" onChange={handleChange}>
       <option value="1">1 Day</option>

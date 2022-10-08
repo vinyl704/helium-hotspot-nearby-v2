@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 .App {
   text-align: center;
   min-height: 100vh;
   background-color: black;
-  
 }
 
-.card{
-  width:32%;
-  height:max-content;
+.card {
+  width: 32%;
+  height: max-content;
   font-size: 0.9rem;
 }
 
-@media (max-width:767px){
-  .card{
-    width:70%;
+@media (max-width: 767px) {
+  .card {
+    width: 70%;
   }
 }
 
@@ -24,10 +23,9 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
 }
-h1{
-  font-family: 'Righteous', cursive;
+h1 {
+  font-family: "Righteous", cursive;
   font-size: 3.7rem;
   max-width: 99%;
   letter-spacing: 3px;
@@ -56,10 +54,10 @@ h1{
   }
 }
 
-#miner-container{
-  max-width:95%;
-  background-color: rgb(255,255,255);
+#miner-container {
+  max-width: 95%;
+  background-color: rgb(255, 255, 255);
   border-width: 1px;
-  border-color: rgb(255,255,255);
+  border-color: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
 }
