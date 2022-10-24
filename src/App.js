@@ -4,6 +4,7 @@ import Miner from "./components/Miner";
 import Distance from "./components/Distance";
 import Header from "./components/Header";
 import Unit from "./components/Unit";
+import Filter from "./components/Filter";
 
 function App() {
   const [data, setData] = useState([]);
@@ -11,6 +12,7 @@ function App() {
   const [long, setLong] = useState(null);
   const [dist, setDist] = useState(5000);
   const [unit, setUnit] = useState("Meters");
+  const [filter,setFilter] = useState({})
 
   const metersToMile = (distance) => distance / 1609.34;
   const isMeters = unit === "Meters";
@@ -38,6 +40,9 @@ function App() {
         .catch(console.log);
     }
   }, [lat, long, dist]);
+const showOnline =(miner)=>{
+  return filter && filter.online === true?miner.status.online==="online":true
+}
 
   return (
     <div className="App">
@@ -55,13 +60,15 @@ function App() {
         <strong>{isMeters ? dist : metersToMile(dist).toFixed(2)}</strong>{" "}
         {unit} of your location.
       </p>
+      <Filter setFilter={setFilter} filter={filter}/>
       <div
         className="mt-5 w-80 d-flex flex-md-row flex-lg-row flex-xl-row flex-wrap mx-auto flex-column justify-content-evenly align-items-center overflow-hidden rounded"
         id="miner-container"
       >
         {data &&
-          data.map((miner, idx) => (
+          data.map((miner, idx) =>  showOnline(miner) && (
             <Miner
+
               key={idx}
               {...miner}
               metersToMile={metersToMile}

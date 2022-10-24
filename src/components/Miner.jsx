@@ -53,7 +53,7 @@ export default function Miner(props) {
   };
 
   return (
-    <div className="card mx-auto mt-2 mb-3 w-35 bg-primary text-white text-center">
+    <div className="card mx-auto mt-2 mb-3 w-35 bg-primary text-white text-center miner_node">
       <h4 className="card-header text-outline">{name}</h4>
       <div className="card-body d-flex flex-column text-center justify-content-center align-items-center">
         <p className="card-item d-flex flex-column flex-wrap text-center text-break">
