@@ -1,4 +1,4 @@
-# helium-hotspot-nearby
+# helium-hotspot-nearby(v2)
 
 ### What is this?
 
