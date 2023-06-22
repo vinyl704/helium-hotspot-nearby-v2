@@ -1,5 +1,5 @@
 # helium-hotspot-nearby(v2)
-
+## NOTICE:  NOT WORKING RIGHT NOW, HAVE TO FIX DUE TO SOLANA MIGRATION
 ### What is this?
 
 This app shows you how many Helium hotspot miners are close to (or far from) your current location.
